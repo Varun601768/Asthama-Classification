@@ -1,0 +1,45 @@
+\contentsline {chapter}{Table of Contents}{i}{}%
+\contentsline {chapter}{List of Figures}{iii}{}%
+\contentsline {chapter}{List of Tables}{iv}{}%
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}Company Profile}{1}{}%
+\contentsline {section}{\numberline {1.2}Functional Requirements}{2}{}%
+\contentsline {section}{\numberline {1.3}Non Functional Requirements}{4}{}%
+\contentsline {section}{\numberline {1.4}Software Requirements}{5}{}%
+\contentsline {subsection}{\numberline {1.4.1}Programming Language and Frameworks}{5}{}%
+\contentsline {subsection}{\numberline {1.4.2}Integrated Development Environment (IDE)}{5}{}%
+\contentsline {subsection}{\numberline {1.4.3}Frameworks and Libraries}{5}{}%
+\contentsline {subsection}{\numberline {1.4.4} User Interface Design }{6}{}%
+\contentsline {chapter}{\chapternumberline {2}System Requirements and Analysis}{7}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{7}{}%
+\contentsline {section}{\numberline {2.2}Project Perspective}{7}{}%
+\contentsline {section}{\numberline {2.3}Project Function}{7}{}%
+\contentsline {section}{\numberline {2.4}General Constraint}{8}{}%
+\contentsline {section}{\numberline {2.5}Requirements}{9}{}%
+\contentsline {subsection}{\numberline {2.5.1}Hardware Requirements}{9}{}%
+\contentsline {subsection}{\numberline {2.5.2}Software Requirements}{9}{}%
+\contentsline {section}{\numberline {2.6}Design}{10}{}%
+\contentsline {chapter}{\chapternumberline {3}Project Carried Out}{12}{}%
+\contentsline {section}{\numberline {3.1}Introduction}{12}{}%
+\contentsline {subsection}{\numberline {3.1.1}Motivation}{12}{}%
+\contentsline {subsection}{\numberline {3.1.2}Methodology}{13}{}%
+\contentsline {subsection}{\numberline {3.1.3}Outcomes}{13}{}%
+\contentsline {section}{\numberline {3.2}Codes}{13}{}%
+\contentsline {subsection}{\numberline {3.2.1}Import Data}{13}{}%
+\contentsline {subsection}{\numberline {3.2.2}Data Columns and Shape}{13}{}%
+\contentsline {subsection}{\numberline {3.2.3}Visualization}{14}{}%
+\contentsline {subsubsection}{Gender Distribution (Bar Chart)}{14}{}%
+\contentsline {subsubsection}{Education Level Distribution (Pie Chart)}{15}{}%
+\contentsline {subsubsection}{ Age Distribution (Histogram)}{16}{}%
+\contentsline {subsection}{\numberline {3.2.4}Splitting Data}{17}{}%
+\contentsline {subsection}{\numberline {3.2.5}LogisticRegression Algorithm}{17}{}%
+\contentsline {subsection}{\numberline {3.2.6}DecisionTreeClassifier Algorithm}{18}{}%
+\contentsline {subsection}{\numberline {3.2.7}RandomForestClassifier Algorithm}{19}{}%
+\contentsline {subsection}{\numberline {3.2.8}SVC Algorithm}{20}{}%
+\contentsline {subsection}{\numberline {3.2.9}Main File}{21}{}%
+\contentsline {subsection}{\numberline {3.2.10}index.html}{23}{}%
+\contentsline {chapter}{\chapternumberline {4}Assessment and Conclusion}{25}{}%
+\contentsline {section}{\numberline {4.1}Project Assessment}{25}{}%
+\contentsline {section}{\numberline {4.2}Personal Development}{26}{}%
+\contentsline {section}{\numberline {4.3}Skills Consolidation}{27}{}%
+\contentsline {section}{\numberline {4.4}Conclusion}{27}{}%

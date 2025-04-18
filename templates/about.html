@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthma Prediction - About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1ced7c;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #161617;
+            color: white;
+            padding: 10px 20px;
+            border: #f4f4f9 solid ;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .visualization {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+
+        .visualization-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px); /* Adjust width to maintain spacing */
+    box-sizing: border-box;
+    position: relative; /* Set relative positioning for the tooltip */
+    margin: 10px 0; /* Space between individual cards */
+}
+
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .card h4 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Tooltip style */
+        .tooltip {
+            visibility: hidden;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 8px;
+            position: absolute;
+            bottom: 100%; /* Position above the card */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px); /* Make each card 1/2 of the container width */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%; /* Make each card full width on smaller screens */
+            }
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border: #f4f4f9 solid;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <h1>Asthma Prediction</h1>
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Prediction</a>
+            <a href="#" id="about-menu">Visualization</a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h2>Welcome to the Asthma Prediction Tool</h2>
+        <p>Click the "About" menu above to learn more about the visualizations and data insights used in our prediction model.</p>
+
+        <!-- Visualization Section -->
+        <div id="visualization-section" class="visualization">
+            <h3>Data Visualizations</h3>
+            <p>Below are some visual insights derived from the dataset used to train the Asthma prediction model:</p>
+
+            <!-- Visualization Row -->
+            <div class="visualization-row">
+                <!-- Visualization 1 -->
+                <div class="card">
+                    <h4>Gender Distribution</h4>
+                    <img src="{{ url_for('static', filename='1.png') }}" alt="Age Distribution">
+                    <div class="tooltip">This chart shows the distribution of ages of patients included in the asthma prediction dataset. It helps us understand the age range of individuals most affected by asthma.</div>
+                </div>
+
+                <!-- Visualization 2 -->
+                <div class="card">
+                    <h4>Education Level</h4>
+                    <img src="{{ url_for('static', filename='2.png') }}" alt="Smoking Impact">
+                    <div class="tooltip">This visualization illustrates the correlation between smoking habits and the likelihood of asthma occurrence in patients. It provides insight into the impact of smoking on respiratory health.</div>
+                </div>
+
+                <!-- Visualization 3 -->
+                <div class="card">
+                    <h4>Age Distribution</h4>
+                    <img src="{{ url_for('static', filename='3.png') }}" alt="Correlation Matrix">
+                    <div class="tooltip">The correlation matrix helps us identify relationships between different features in the dataset. This is essential for understanding which factors most influence the prediction of asthma.</div>
+                </div>
+            </div>
+
+            <!-- Visualization Row 2 -->
+            <div class="visualization-row">
+                <!-- Visualization 4 -->
+                <div class="card">
+                    <h4>Logistic Regression HeatMap</h4>
+                    <img src="{{ url_for('static', filename='r1.png') }}" alt="Logistic Regression HeatMap">
+                    <div class="tooltip">This heatmap shows the results of applying logistic regression to the asthma prediction model. It highlights the most significant features that contribute to the prediction outcome.</div>
+                </div>
+    
+                <!-- Visualization 5 -->
+                <div class="card">
+                    <h4>RandomForestClassifier HeatMap</h4>
+                    <img src="{{ url_for('static', filename='r2.png') }}" alt="DecisionTreeClassifier HeatMap">
+                    <div class="tooltip">The DecisionTreeClassifier heatmap visualizes how different features are prioritized by the decision tree algorithm when making asthma predictions.</div>
+                </div>
+
+                <!-- Visualization 6 -->
+                <div class="card">
+                    <h4>DecisionTreeClassifier HeatMap</h4>
+                    <img src="{{ url_for('static', filename='r3.png') }}" alt="RandomForestClassifier HeatMap">
+                    <div class="tooltip">This heatmap shows how the RandomForestClassifier algorithm evaluates and predicts asthma occurrences based on multiple features from the dataset.</div>
+                </div>
+            </div>
+
+            <!-- Visualization Row 3 -->
+            <div class="visualization-row">
+                <!-- Visualization 7 -->
+                <div class="card">
+                    <h4>Support Vector Machine HeatMap</h4>
+                    <img src="{{ url_for('static', filename='r4.png') }}" alt="Support Vector Machine HeatMap">
+                    <div class="tooltip">This heatmap presents the results of the Support Vector Machine (SVM) model used to predict asthma. It offers insights into the model’s decision-making process.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Asthma Prediction. All rights reserved. <br> Developed by <a href="#">Varun M C</a></p>
+    </footer>
+
+    <script>
+        // Add event listener to About menu
+        document.getElementById("about-menu").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default navigation
+            const visualizationSection = document.getElementById("visualization-section");
+            visualizationSection.style.display = "block"; // Show visualization section
+        });
+    </script>
+</body>
+</html>
