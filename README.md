@@ -60,8 +60,11 @@ This helps in **early diagnosis** and assists healthcare providers in making bet
 ---
 
 ### 📈 Model Accuracy and Results  
-<img width="600" src="https://github.com/user-attachments/assets/168edfd3-f37f-4738-a2f3-13d376c83bd5" />  
+<img width="600" src="https://github.com/user-attachments/assets/168edfd3-f37f-4738-a2f3-13d376c83bd5" /> 
+<img width="500" src="https://github.com/user-attachments/assets/7d14bb35-3015-450e-9579-20c09976238a" />
+
 <img width="500" src="https://github.com/user-attachments/assets/f114dcd3-7c0e-4168-9d5d-34babe489440" />  
+
 
 ---
 
